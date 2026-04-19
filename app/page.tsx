@@ -911,12 +911,3 @@ Suggested response JSON:
   );
 }
 
-function handleImagePaste(event: React.ClipboardEvent<HTMLDivElement>) {
-  const items = Array.from(event.clipboardData?.items || []);
-  const files = items
-    .filter((item) => item.type.startsWith("image/"))
-    .map((item) => item.getAsFile())
-    .filter(Boolean);
-
-  if (!files.length) return;
-}
