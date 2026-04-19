@@ -737,7 +737,7 @@ export default function RadiologyTranscriptionWebApp() {
                   <div
                     ref={pasteZoneRef}
                     tabIndex={0}
-                    onPaste={handleImagePaste}
+                    onPaste={handlePasteIntoZone}
                     className="rounded-2xl border-2 border-dashed bg-white p-8 text-center outline-none focus:ring-2 focus:ring-slate-300"
                   >
                     <ImagePlus className="mx-auto mb-3 h-8 w-8" />
